@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "bisheng start",
     "lint": "eslint .eslintrc.js ./packages/*/src ./packages/*/test",
     "lint-fix": "eslint .eslintrc.js --fix ./packages/*/src ./packages/*/test",
     "test": "lerna bootstrap && lerna exec -- _mocha --recursive --opts test/mocha.opts",
@@ -8,6 +9,7 @@
     "publish": "lerna publish"
   },
   "devDependencies": {
+    "bisheng": "^0.28.6",
     "eslint": "latest",
     "eslint-config-airbnb": "latest",
     "eslint-plugin-import": "latest",
@@ -15,5 +17,8 @@
     "eslint-plugin-react": "latest",
     "lerna": "^2.5.1",
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "react-document-title": "^2.0.3"
   }
 }
